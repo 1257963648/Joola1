@@ -1,0 +1,26 @@
+public class W20161202{
+	public static void main(String[] args) {
+		int[] a = {98,94,51,43,21,42,33,84,91};
+		/*for (int i=0;i<a.length-1 ;i++ ) {
+			for (int j=0;j<a.length-1 ;j++ ) {
+				if (a[j]<a[j+1]) {
+					int k = a[j+1];
+					a[j+1] = a[j];
+					a[j] = k;
+				}                                                                            
+			}
+		}
+		for (int i=0;i<a.length ;i++ ) {
+			System.out.println(a[i]);
+		}*/
+		for (int i = 0;i<a.length ;i++ ) {
+		for (int j = i+1;j<a.length ;j++ ) {
+			if (a[i]<a[j]) {
+				int k = a[j];
+					a[j] = a[i];
+					a[i] = k;
+				}
+			}System.out.println(a[i]);
+		}
+	}
+}
